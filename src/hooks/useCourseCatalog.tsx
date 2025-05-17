@@ -12,7 +12,7 @@ const useCourseCatalog = () => {
   useEffect(() => {
     const data = getStorageData();
     setCourses(data.courses);
-  }, [courses]);
+  }, []);
 
   useEffect(() => {
     let updated = [...courses];
